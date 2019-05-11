@@ -1,0 +1,152 @@
+body {
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Tinos', serif;
+}
+$main-color: #4a2715;
+$menu-color: #f9c979;
+
+.slogan2 {
+	color : $menu-color;
+	font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 5vw;
+}
+.slogan2:before {
+	content:'';
+	position: absolute;
+	left:125px;
+	top: 70px;
+	height: 2px;
+	width: 4vw;
+	background: $menu-color;
+	margin-left: 1vw;
+}
+.box-about-gt {
+	margin-bottom: 100px;
+	background: #f8f7f6;
+	.box-about-gt__photo{
+		img {
+			position: relative;
+		    z-index: 5;
+		    object-fit: cover;
+		    height: 70vh;
+		    width: 50vw;
+		    right: 9vw;
+		    margin-top: 10vh;
+		    top: 40px;
+		}
+	}
+	.box-about-gt__content {
+		padding-left: 140px;
+		margin-left: -2vw;
+		margin-top: 55px;
+		.slogan-about {
+
+			@extend .slogan2;
+			padding-top: 60px;
+		}
+		h3 {
+			font-size: 30px;
+			img {
+				margin-bottom: 6px;
+				margin-left: 10px;
+			}
+		}
+		.text {
+			margin-top: 15px;
+			font-size: 15px;
+			font-weight: 400;
+			text-align: justify;
+		}
+
+	}
+} // end box-about
+
+.box-about-gt2 {
+	@extend .box-about-gt; 
+	margin-bottom: 50px;
+	background: white;
+	.box-about-gt__photo2 {
+		img {
+			position: relative;
+		    top: -2vh;
+		    left: 6vw;
+		    width: 48vw;
+		    height: 65vh;
+		}
+	}
+	.box-about-gt__content2 {
+		@extend .box-about-gt__content;
+		padding-left: 10px;
+		position: relative;
+		bottom: 70px;
+	}
+
+}
+
+.title-team {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	padding-bottom: 20px;
+	&:before {
+		content: "";
+	    text-align: center;
+	    position: absolute;
+	    left: 37vw;
+	    height: 2px;
+	    top: 70px;
+	    width: 5vw;
+	    background: #f9c979;
+	}
+}
+.team {
+	img {
+		margin-top: 10px;
+	    border-radius: 50%;
+	}
+	.name {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.position {
+		color: gray;
+	}
+	.info {
+		padding-bottom: 15px;
+	}
+}
+
+// custom dịch vụ
+.services_content {
+	img {
+		width: 30vw;
+		height: auto;
+		object-fit: cover;
+	}
+	.heading-sect {
+		a {
+			text-decoration: none;
+			color: #000;
+			font-size: 28px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}	
+	.heading-opac {
+		font-size: 3em;
+		font-weight: bold;
+		opacity: 0.15;
+	}
+	.content {
+		text-align: justify;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+
+
