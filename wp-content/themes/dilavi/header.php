@@ -23,14 +23,15 @@
             </div>
             <div class="col-md-9">
               <div class="list-menu">
-                <ul class="pull-right mt-2 p-3">
-                  <a href="<?php bloginfo('url'); ?>"><li>Trang Chủ</li></a>
-                  <a href="http://localhost:8888/dilavi/gioi-thieu/"><li>Giới Thiệu</li></a>
-                  <a href="http://localhost:8888/dilavi/dich-vu/"><li>Dịch Vụ</li></a>
-                  <a href="#"><li>Hình Ảnh và Video</li></a>
-                  <a href="#"><li>Blog</li></a>
-                  <a href="#"><li>Booking</li></a>
-                  <a href="#"><li>Liên Hệ</li></a> 
+                <ul class="pull-right mt-2 p-3 lh2-ul">
+                  <?php wp_nav_menu( 
+                    array( 
+                        'theme_location' => 'topmenu', 
+                        'container' => 'false', 
+                        'menu_id' => 'header-menu', 
+                        'menu_class' => 'top-menu'
+                     ) 
+                  ); ?>
                 </ul>
               </div>
             </div>

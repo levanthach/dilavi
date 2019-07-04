@@ -1,5 +1,5 @@
 <footer>
-	<hr class="ngan">
+	<div class="ngan"></div>
 	<div class="main-footer p-2">
 		<div class="container">
 			<div class="row">
@@ -11,10 +11,10 @@
 						<h6 class="title">CÔNG TY TNHH TMDV VÀ ĐẦU TƯ BẤT ĐỘNG SẢN DILAVI</h6>
 						<div class="address">
 							<i class="fas fa-map-marker-alt"><span>77 Huỳnh Tịnh Của, Phường 8, Quận 3, TP.HCM</span></i><br>
-							<i class="fa fa-phone"></i><span>0982 883 566</span></i><br>
+							<i class="fa fa-phone" style="transform: rotate(90deg);"></i><span>0982 883 566</span></i><br>
 							<i class="fas fa-envelope"><span>info@dilavi.vn</span></i>
-						</div>
-					</div> <!-- end address -->
+						</div><!-- end address -->
+					</div> 
 				</div> <!-- end col 5 -->
 				<div class="col-md-3">
 					<div class="footer__title mt-4">
